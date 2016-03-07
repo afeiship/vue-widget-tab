@@ -1,0 +1,1 @@
+!function(e,i){e.component("vue-widget-tab",{props:["visible"],template:'<div class="vue-widget-tab"></div>'})}(Vue,window);
