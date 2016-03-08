@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <script type="text/javascript" src="../bower_components/vue/dist/vue.min.js"></script>
-  <script type="text/javascript" src="../dist/vue-widget-tab.js"></script>
+  <script type="text/javascript" src="../src/vue-widget-tab.js"></script>
   <link rel="stylesheet" type="text/css" href="../dist/vue-widget-tab.css"/>
-
 </head>
 <body>
 
-<vue-widget-tab></vue-widget-tab>
+<vue-widget-tab :active-index="activeIndex" :items="items">
+
+</vue-widget-tab>
 
 <script type="text/javascript">
   var vm = new Vue({
     el: 'body',
     data: {
-      visible: false
+      activeIndex: 0,
+      items: [{
+        text: '全部',
+        type: '0'
+      }, {
+        text: '收入',
+        type: '1'
+      }, {
+        text: '支出',
+        type: '-1'
+      }]
     }
   });
-
-  //show:vm.visible=true;
-  //hide:vm.visible=false;
 </script>
 </body>
 </html>
