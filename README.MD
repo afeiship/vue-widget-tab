@@ -7,3 +7,5 @@ Widget tab based on vue.
 + npm install
 + bower install
 + gulp
+
++ Tab里与slot结合不是很了,还在寻求更好的解决方案
